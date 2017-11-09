@@ -50,15 +50,28 @@ def walk_the_path(music_path):
 
 def error_msg(message):
     '''Takes argument message custom error message on how to use the script.
-    Displays a string with an elaborate  error message.'''
-    pass
+    Displays a string with an elaborate error message.'''
+    
+    print >> sys.stderr, str(message) # Redirect output to stderr stream
 
 def usage():
     '''Defines the proper usage error message.
     Display error message if user attempts to run without all required 
     parameters, then exit.  
     '''
-    pass
+    message = (
+        '===================================================================\n'
+        'music_catalogue\n' 
+        '\tFinds all *.mp3 files in a given folder (and sub-folders),\n'
+        '\tRead the ID3 tags, write that info to a SQLite database.\n\n'
+        'Usage:\n'
+        '\t{0} <foldername>\n'
+        '\t Where <foldername> is the path to mp3 files.\n\n'
+        '===================================================================\n'
+        ).format(sys.argv[0])   # Include app name
+
+    error_msg(message) # Output the err-msg
+    sys.exit(1) # Exit the app
 
 if __name__ == '__main__':
     init_database()
