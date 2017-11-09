@@ -27,7 +27,14 @@ def init_database():
     '''If it doesn\'t exist, creates database music_catalogue.db 
     Create the connection and cursor to database  
     '''
-    pass
+    global connection
+    global cursor
+
+    # check on system argument parameters
+    if len(sys.argv) != 2:
+        usage()
+    else:
+        pass
 
 def make_db_table():
     '''If it doesn\'t exist, creates database table - mp3
@@ -52,7 +59,7 @@ def error_msg(message):
     '''Takes argument message custom error message on how to use the script.
     Displays a string with an elaborate error message.'''
     
-    print >> sys.stderr, str(message) # Redirect output to stderr stream
+    print( str(message), sys.stderr )  # Redirect output to stderr stream
 
 def usage():
     '''Defines the proper usage error message.
