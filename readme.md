@@ -1,19 +1,36 @@
 # music_catalogue - An MP3 audio file cataloging program
+<table>
+    <caption>Creates a database holding information extracted from metadata(ID3 tags).</caption>
+    <thead>
+        <th>pkid</th>
+        <th>title</th>
+        <th>artist</th>
+        <th>album</th>
+        <th>bitrate</th>
+        <th>genre</th>
+        <th>playtime</th>
+        <th>track no.</th>
+        <th>year</th>
+        <th>filesize</th>
+        <th>path</th>
+        <th>filename</th>
+    </thead>
+    <tbody>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tbody>
+</table>
 
-<dl>
-    <dt>Creates a database holding information extracted from metadata(ID3 tags).</dt>
-    <dd>Title</dd>
-    <dd>Artist</dd>
-    <dd>Album</dd>
-    <dd>Bitrate</dd>
-    <dd>Genre</dd>
-    <dd>Playtime</dd>
-    <dd>Track No.</dd>
-    <dd>Year</dd>
-    <dd>Filesize</dd>
-    <dd>Path (Location)</dd>
-    <dd>Filename</dd>
-</dl>
 
 DATA
 ====
